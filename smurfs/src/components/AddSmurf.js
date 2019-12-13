@@ -9,7 +9,6 @@ const AddSmurf = () => {
     }
 
     const handleSubmit = e => {
-        e.preventDefault();
         axios
             .post(`http://localhost:3333/smurfs`, {...smurf})
             .then(() => {
